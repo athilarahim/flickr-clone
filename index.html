@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="images/favicon (1).ico">
+    <title>Find your inspiration.</title>
+</head>
+<body>
+    <div class="home">
+
+    <div class="slideshow-container">
+        <div class="header">
+            <div class="header-items">
+                <img src="images/opensearch-flickr-logo.png" alt="logo" style="height: 21px; width: 21px; margin-right: 5.5px;">
+                
+                <h5 style="color: white; font-size: 28.5px;">flickr</h5>
+                <img src="images/find.png" height="18px" width="18px" style="position: absolute; margin-left: 14.3rem; ">
+                <input type="textbox" name="search" placeholder="Photos, people, or groups">
+                <div class="user-btns">
+                <button class="login">Log In</button>   
+                <button class="signup">Sign Up</button>   
+               </div>
+            </div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/TomWeber.jpeg" style="width:100%; height: 641px">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/A_Renner.jpeg" style="width:100%; height: 641px">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images/DaveTrono.jpeg" style="width:100%; height: 641px">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/Iceberg.jpeg" style="width:100%; height: 641px">
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="images/Xtian.jpeg" style="width:100%; height: 641px">
+          </div>
+
+          <div class="text-overlay">
+            <h2 class="text-overlay-main">Find your inspiration.</h2>
+            <p class="text-overlay-sub">Join the Flickr community, home to tens of billions of<br> photos and 2 million groups.</p>
+            
+            <div class="main-button">
+                <button class="startbtn">Start for free</button>
+            </div>
+
+         </div>
+         <div class="image-bottom-text">
+            <div class="caption jump">
+                <h6>Des bouquetins<br>by Tom Weber</h6>
+            </div>
+            <div class="caption jump">
+                <h6>Smaragdaedechse<br>by A_Renner</h6>
+            </div>
+            <div class="caption jump">
+                <h6>Spring time in New Hampshire<br>by Dave Trono</h6>
+            </div>
+            <div class="caption jump">
+                <h6>Untitled<br>by ms'ce photographie</h6>
+            </div>
+            <div class="caption jump">
+                <h6>Feriade Pentacote - 2024 - Spectacle Equestre 3 - 11<br>by Xtian</h6>
+            </div>
+            
+         </div>
+         
+     </div>
+     <div class="footer">
+        <span>About</span>
+        <span>Jobs</span>
+        <span>Blog</span>
+        <span>Advertise</span>
+        <span>Developers</span>
+        <span>Cookies</span>
+        <span>Guidelines</span>
+        <span>Help</span>
+        <span>Privacy</span>
+        <span>Terms</span>
+        <select class="dropdown">
+            <option value="" selected>English</option>
+            <option value="">Dutch</option>
+            <option value="">Espano</option>
+            <option value="">Italiano</option>
+        </select>   
+        <img class="awesome" src="images/awesome.svg" alt="awesome">
+        <div class="social-icons">
+        <img class="facebook" src="images/facebook.png" alt="fb">
+        <img class="youtube" src="images/youtube.png" alt="yt">
+        <img class="instagram" src="images/instagram.png" alt="inst">
+       </div>
+     </div>
+     
+    </div>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let captions = document.getElementsByClassName("caption");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                captions[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              slides[slideIndex-1].style.display = "block"; 
+              captions[slideIndex-1].style.display = "block"; 
+              setTimeout(showSlides, 5000); 
+            }
+            </script>
+</body>
+</html>
